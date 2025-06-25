@@ -1,0 +1,44 @@
+[window]
+opacity = 0.65
+
+[font]
+normal = {family = "Hack Nerd Font Mono", style = "Regular"}
+bold = {family = "Hack Nerd Font Mono", style = "Bold"}
+italic = {family = "Hack Nerd Font Mono", style = "Italic"}
+size = 10.0
+
+# Primary colors
+[colors.primary]
+background = '#2a0000'   # A brighter, but still dark shade
+foreground = '#d9d9d9'   # Light gray for text readability
+
+# Normal colors
+[colors.normal]
+black   = '#8a0000'      # Brighter red, now clearly visible
+red     = '#ff3300'      # Fiery red-orange
+green   = '#f0651a'      # Vivid burnt orange
+yellow  = '#ff8c33'      # Warm golden orange
+blue    = '#f27a1a'      # Coppery red-bronze
+magenta = '#f02020'      # Brightened deep red-magenta
+cyan    = '#ffb38f'      # Soft peach-orange
+white   = '#efefef'      # Soft bright white
+
+# Bright colors
+[colors.bright]
+black   = '#b30000'      # Brighter red for better visibility in tools like htop
+red     = '#ff5522'      # Intense red-orange
+green   = '#ff751f'      # Bright vivid orange
+yellow  = '#ffcc80'      # Light golden-orange
+blue    = '#ff9933'      # Brighter copper-gold
+magenta = '#ff4d66'      # Bright fuchsia-red
+cyan    = '#ffe6dc'      # Light peach
+white   = '#ffffff'      # True white for maximum contrast
+
+# Cursor and selection colors
+[colors.cursor]
+text = '#0a0000'         # Background color for cursor text
+cursor = '#ff3300'       # Red-orange cursor color
+
+[colors.selection]
+text = '#0a0000'         # Text in selected areas
+background = '#ff6666'   # Light red selection background
