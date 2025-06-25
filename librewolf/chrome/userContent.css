@@ -1,0 +1,23 @@
+/* Source file made available under Mozilla Public License v. 2.0 See the main repository for updates as well as full license text. 
+   https://github.com/Godiesc/opera-gx */  
+
+@import url(components/ogx_root-personal.css);
+@import url(components/ogx_UC-newtabpage.css);
+@import url(components/ogx_UC-settings-addons-pages.css);
+@import url(components/ogx_UC-addons-store.css);
+
+@-moz-document url("about:newtab"), url("about:home") {
+  .logo-and-wordmark {
+    display: none !important;
+  }
+}
+
+@-moz-document url("about:newtab"), url("about:home") {
+  body {
+    background-image: url("newtab/saber-alter5.jpg") !important;
+    background-size: cover !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    background-color: black !important; /* fallback */
+  }
+}
