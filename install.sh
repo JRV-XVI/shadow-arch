@@ -1,6 +1,10 @@
 #!/bin/bash
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si
 
-sudo pacman -S alacritty \
+sudo pacman -S --needed alacritty \
+	base-devel \
 	rofi \
 	zsh-autosuggestions \
 	zsh-syntax-highlighting \
@@ -19,6 +23,7 @@ sudo pacman -S alacritty \
 	mpv \
 	upower \
 	rofi-emoji \
+	xdg-user-dirs
 	
-# AUR installation
-# xwinwrap, i3lock-color,
+yay -S xwinwrap \
+	i3lock-color
