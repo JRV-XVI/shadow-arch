@@ -14,6 +14,7 @@ sudo pacman -S --needed alacritty \
 	exa \
 	bat \
 	ripgrep \
+	xclip \
 	fzf \
 	qtile \
 	picom \
@@ -23,7 +24,9 @@ sudo pacman -S --needed alacritty \
 	mpv \
 	upower \
 	rofi-emoji \
+	unzip \
 	xdg-user-dirs
 	
-yay -S xwinwrap \
+yay -S xwinwrap-0.9-bin \
+	qtile-extras \
 	i3lock-color
