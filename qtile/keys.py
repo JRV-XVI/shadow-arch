@@ -9,6 +9,16 @@ mod = "mod4"
 lockScreen = "~/.config/qtile/i3lock.sh"
 terminal = guess_terminal()
 
+# Define available layouts
+# layouts = ["latam", "us"]
+# current_layout = 0  # Initialize the starting layout index
+#
+#
+# def cycle_layout(qtile):
+#    global current_layout
+#    current_layout = (current_layout + 1) % len(layouts)  # Cycle through layouts
+#    layout = layouts[current_layout]  # Get the current layout
+#    qtile.cmd_spawn(f"setxkbmap -layout {layout}")  # Change the layout
 
 # A list of available commands that can be bound to keys can be found
 # at https://docs.qtile.org/en/latest/manual/config/lazy.html
@@ -97,6 +107,13 @@ keys = [
     Key([mod, "control"], "q", lazy.shutdown(), desc="Shutdown Qtile"),
     Key([mod], "r", lazy.spawn("rofi -show drun"), desc="rofi menu apps"),
     Key([], "Print", lazy.spawn("flameshot gui"), desc="Screenshot utility"),
+    Key(
+        [mod],
+        "u",
+        lazy.widget["keyboardlayout"].next_keyboard(),
+        desc="Next keyboard layout.",
+    ),
+    # Key([mod], "u", lazy.function(cycle_layout)),  # Change keylayout
 ]
 
 # Add key bindings to switch VTs in Wayland.

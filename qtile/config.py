@@ -42,13 +42,13 @@ layout_focus2 = {
 
 layouts = [
     layout.MonadTall(**layout_focus, name="Tiled"),
-    layout.Max(name="Max"),
+    layout.Max(**layout_focus, name="Max"),
     # Try more layouts by unleashing below layouts.
     # layout.Columns(border_focus_stack=["#d75f5f", "#8f3d3d"], border_width=4),
     # layout.Stack(num_stacks=2),
     # layout.Bsp(),
     # layout.Matrix(),
-    layout.MonadWide(name="MonaWide"),
+    layout.MonadWide(**layout_focus, name="MonaWide"),
     # layout.RatioTile(),
     # layout.Tile(),
     # layout.TreeTab(),
@@ -127,6 +127,17 @@ screens = [
                     foreground=theme["base_fg"],
                     center_aligned=True,
                     max_chars=40,
+                    **powerline,
+                ),
+                widget.KeyboardLayout(
+                    configured_keyboards=["us", "latam"],
+                    display_map={"us": "US", "latam": "ES"},
+                    fmt="  {}",
+                    foreground=theme["peach"],
+                    background=theme["bg1"],
+                    fontsize=16,
+                    padding=5,
+                    update_interval=0.5,
                     **powerline,
                 ),
                 icon(
