@@ -231,7 +231,7 @@ screens = [
             background=theme["bg6"],
         ),
         # Set static wallpaper
-        wallpaper="~/Pictures/wallpapers/saber-1.jpg",
+        wallpaper="~/Pictures/wallpapers/saber-alter5.jpg",
         wallpaper_mode="fill",
         # You can uncomment this variable if you see that on X11 floating resize/moving is laggy
         # By default we handle these events delayed to already improve performance, however your system might still be struggling
